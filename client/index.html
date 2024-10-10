@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>web app</title>
+  </head>
+  <body>
+    <main>
+      <label>Имя:</label>
+      <input type="text" id="name-input" />
+      <button id="add-name-btn">Добавить</button>
+      <br /><br />
+      <label for="app_type">Тип заявки:</label>
+      <select id="app_type">
+        <option value="Получение допуска">Получение допуска</option>
+        <option value="Исправление оценки">Исправление оценки</option>
+        <option value="Получение подписи">Получение подписи</option>
+        <option value="Подача жалобы">Подача жалобы</option>
+        <option value="Другое">Другое</option>
+      </select>
+      <br /><br />
+      <label for="group">Группа:</label>
+      <select id="group">
+        <option value="ИДБ-22-10">ИДБ-22-10</option>
+        <option value="ИДБ-22-11">ИДБ-22-11</option>
+        <option value="ИДБ-22-12">ИДБ-22-12</option>
+        <option value="ИДБ-22-13">ИДБ-22-13</option>
+      </select>
+      <br /><br /><br />
+      <div>
+        <input placeholder="Иванов И.И." id="search-input" />
+        <button id="search-btn">Поиск заявки</button>
+      </div>
+
+      <table id="table">
+        <thead>
+          <th>ID заявки</th>
+          <th>Имя студента</th>
+          <th>Группа</th>
+          <th>Тип заявки</th>
+          <th>Дата подачи</th>
+          <th>Удалить</th>
+          <th>Изменить</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <section hidden id="update-row">
+        <label>Имя:</label>
+        <input type="text" id="update-name-input" />
+        <button id="update-row-btn">Изменить</button>
+        <br /><br />
+        <label for="update_app_type">Тип заявки:</label>
+        <select id="update_app_type">
+          <option value="Получение допуска">Получение допуска</option>
+          <option value="Исправление оценки">Исправление оценки</option>
+          <option value="Получение подписи">Получение подписи</option>
+          <option value="Подача жалобы">Подача жалобы</option>
+          <option value="Другое">Другое</option>
+        </select>
+        <br /><br />
+        <label for="update_group">Группа:</label>
+        <select id="update_group">
+          <option value="ИДБ-22-10">ИДБ-22-10</option>
+          <option value="ИДБ-22-11">ИДБ-22-11</option>
+          <option value="ИДБ-22-12">ИДБ-22-12</option>
+          <option value="ИДБ-22-13">ИДБ-22-13</option>
+        </select>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
